@@ -192,7 +192,8 @@ if __name__ == "__main__":
             df = pd.read_excel(filename)
             files.append(df)
         else:
-            raise NotImplementedError("File type not supported")
+            pass
+            # raise NotImplementedError("File type not supported")
 
     # Prepare a directory for translated texts
     sentiment_dir = os.path.join(directory, "sentiment")
